@@ -7,7 +7,7 @@ class StackSpec extends WordSpec with Matchers {
                 val stack = new Stack()
 
                 assertThrows[NoSuchElementException] {
-                    stack.pop
+                    stack.pop()
                 }
             }
 
@@ -32,7 +32,6 @@ class StackSpec extends WordSpec with Matchers {
 
                 assert(stack.pop() equals secondObject)
                 assert(stack.pop() equals firstObject)
-
             }
         }
     }
