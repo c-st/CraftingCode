@@ -5,13 +5,14 @@ class StackSpec extends WordSpec with Matchers {
         "empty" should {
             "throw an exception if popped" in {
                 val stack = new Stack()
-
+                pending
                 assertThrows[NoSuchElementException] {
                     stack.pop()
                 }
             }
 
             "pop the last pushed object" in {
+                pending
                 val stack = new Stack()
                 val stackableObject = new Object()
 
@@ -23,6 +24,7 @@ class StackSpec extends WordSpec with Matchers {
 
         "non-empty" should {
             "pop objects in the reverse order than they were pushed" in {
+                pending
                 val firstObject = new Object()
                 val secondObject = new Object()
                 val stack = new Stack()
